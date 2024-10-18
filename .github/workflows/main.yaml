@@ -29,6 +29,9 @@ jobs:
         with:
           start: npm run start
           wait-on: 'http://localhost:4200'
+                        
+      - name: Setup LCOV
+        uses: hrishikesh-kadam/setup-lcov@v1
 
       - name: Report LCOV
         uses: zgosalvez/github-actions-report-lcov@v4.1.17
